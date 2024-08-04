@@ -1,24 +1,17 @@
-// tailwind.config.js
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-    "./public/index.html",
-  ],
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  darkMode: false, 
   theme: {
     extend: {
       colors: {
-        gold: '#FFD700', // Gold color
+        black: '#000000',
+        gold: '#FFD700',
+        white: '#FFFFFF',
       },
-      transitionProperty: {
-        'height': 'height',
-      },
-      spacing: {
-        '128': '32rem',
-      },
-      minHeight: {
-        '128': '32rem',
-      }
     },
   },
+  variants: {
+    extend: {},
+  },
   plugins: [],
-}
+};

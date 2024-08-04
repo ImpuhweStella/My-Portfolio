@@ -1,31 +1,29 @@
 import React from 'react';
 
-const Skills = () => {
-  const skills = [
-    { name: 'JavaScript', rating: 5 },
-    { name: 'Node.js', rating: 4 },
-    { name: 'Express.js', rating: 4 },
-    { name: 'React.js', rating: 4 },
-    { name: 'MongoDB', rating: 3 },
-  ];
+const skills = [
+  { name: 'JavaScript', level: '80%' },
+  { name: 'React.js', level: '70%' },
+  { name: 'Node.js', level: '75%' },
+  { name: 'Express.js', level: '60%' },
+  { name: 'MongoDB', level: '65%' },
+  { name: 'Tailwind CSS', level: '50%' },
+];
 
+const Skills = () => {
   return (
-    <section id="skills" className="bg-gray-800 py-20">
-      <h2 className="text-4xl font-bold text-center mb-8 text-white">My Skills</h2>
-      <div className="flex flex-wrap justify-center">
-        {skills.map(skill => (
-          <div key={skill.name} className="bg-black text-white m-4 p-6 rounded-lg shadow-lg w-64 transition-transform duration-300 fade-in card-hover">
-            <h3 className="text-2xl font-bold mb-2">{skill.name}</h3>
-            <div className="flex">
-              {Array(skill.rating).fill().map((_, i) => (
-                <span key={i} className="text-gold">★</span>
-              ))}
-              {Array(5 - skill.rating).fill().map((_, i) => (
-                <span key={i} className="text-gray-500">★</span>
-              ))}
+    <section className="bg-black text-white p-6 mb-8">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-bold">My Skills</h2>
+        <div className="grid grid-cols-2 gap-4 mt-4">
+          {skills.map((skill, index) => (
+            <div key={index}>
+              <h3 className="text-xl font-semibold">{skill.name}</h3>
+              <div className="w-full bg-gray-700 h-2 rounded-full mt-1">
+                <div className="bg-gold h-2 rounded-full" style={{ width: skill.level }}></div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

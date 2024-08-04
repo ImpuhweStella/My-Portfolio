@@ -2,10 +2,11 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className="bg-gray-800 py-20 text-center">
-      <h1 className="text-5xl font-bold mb-4">Hello, My Name Is Stella Impuhwe</h1>
-      <p className="text-xl mb-8">A Creative Full Stack Developer</p>
-      <a href="#about" className="bg-secondary text-black py-2 px-4 rounded hover:bg-accent">Know More</a>
+    <header className="bg-black text-white p-6">
+      <div className="container mx-auto flex justify-between items-center">
+        <h1 className="text-3xl text-gold font-bold">I'm Stella Impuhwe</h1>
+        
+      </div>
     </header>
   );
 };

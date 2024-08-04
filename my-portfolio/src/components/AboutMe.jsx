@@ -1,18 +1,16 @@
 import React from 'react';
 
-const AboutMe = () => {
+const About = () => {
   return (
-    <section id="about" className="bg-gray-700 py-20 text-center">
-      <h2 className="text-4xl font-bold mb-8">Who Am I</h2>
-      <p className="text-lg mb-4">
-        My name is Stella Impuhwe. I'm a Freelance Full Stack Developer based in Rwanda, and I'm very passionate and dedicated to my work.
-      </p>
-      <p className="text-lg mb-8">
-        With experience as a professional Full Stack Developer, I have acquired the skills necessary to build great and premium websites.
-      </p>
-      <a href="path/to/CV.pdf" className="bg-secondary text-black py-2 px-4 rounded hover:bg-accent">Download CV</a>
+    <section className="bg-black text-white p-6">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-bold">About Me</h2>
+        <p className="mt-4">
+          Motivated, organized, and team-oriented software developer with a Bachelor's degree in Information Technology, specializing in Information Management. Experienced in JavaScript, Node.js, Express.js, and React.js. Committed to problem-solving and creating efficient solutions, and dedicated to delivering high-quality software through collaboration and innovation. Excels in time management to ensure productivity and success in all endeavors.
+        </p>
+      </div>
     </section>
   );
 };
 
-export default AboutMe;
+export default About;
